@@ -1,0 +1,420 @@
+@font-face {
+    font-family: 'Varela Round';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Droid Sans Mono Regular'), local('DroidSansMono-Regular'), url(../fonts/VarelaRound-Regular.ttf) format('truetype');
+  }
+
+  .clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+  }
+  .clearfix {
+    display: inline-block;
+  }
+  html[xmlns] .clearfix {
+    display: block;
+  }
+  * html .clearfix {
+    height: 1%;
+    font-family: 'Varela Round', sans-serif;
+  }
+  .noselect {
+    -webkit-user-select: none;
+    /* Chrome/Safari */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* IE10+ */
+  }
+  h4 {
+    width: 75%;
+    text-align: center;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: normal;
+    color: white;
+    font-size: 14px;
+    margin: 0 auto 1em auto;
+    padding: 1em;
+    background: #b63642;
+  }
+  h5 {
+    font-size: 1em;
+    font-weight: bold;
+  }
+  p {
+    text-align: center;
+    font-family: 'Varela Round', sans-serif;
+    margin: 3em auto 1em auto;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    border-top: 2px solid #414141;
+    background: #f4f4f4;
+  }
+  .left-align {
+    text-align: left;
+  }
+  .right-align {
+    text-align: right;
+  }
+  .cal1 {
+    margin: 30px auto;
+    max-width: 780px;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 14px;
+  }
+  .cal1 .clndr .clndr-controls {
+    display: inline-block;
+    width: 100%;
+    position: relative;
+  }
+  .cal1 .clndr .clndr-controls .month {
+    float: left;
+    width: 33%;
+    text-align: center;
+  }
+  
+  .cal1 .clndr .clndr-table {
+    table-layout: fixed;
+    width: 100%;
+  }
+  .cal1 .clndr .clndr-table .header-days {
+    height: 30px;
+    font-size: 10px;
+    background: #0D70A6;
+  }
+  .cal1 .clndr .clndr-table .header-days .header-day {
+    vertical-align: middle;
+    text-align: center;
+    border-left: 1px solid #000;
+    border-top: 1px solid #000;
+    color: #fff;
+  }
+  .cal1 .clndr .clndr-table .header-days .header-day:last-child {
+    border-right: 1px solid #000;
+  }
+  .cal1 .clndr .clndr-table tr {
+    height: 85px;
+  }
+  .cal1 .clndr .clndr-table tr td {
+    vertical-align: top;
+  }
+  .cal1 .clndr .clndr-table tr .day {
+    border-left: 1px solid #000;
+    border-top: 1px solid #000;
+    width: 100%;
+    height: inherit;
+  }
+  .cal1 .clndr .clndr-table tr .day:hover {
+    background: #eee;
+  }
+  .cal1 .clndr .clndr-table tr .day.today,
+  .cal1 .clndr .clndr-table tr .day.my-today {
+    background: #9AD6E3;
+  }
+  .cal1 .clndr .clndr-table tr .day.today:hover,
+  .cal1 .clndr .clndr-table tr .day.my-today:hover {
+    background: #72c6d8;
+  }
+  .cal1 .clndr .clndr-table tr .day.today.event,
+  .cal1 .clndr .clndr-table tr .day.my-today.event {
+    background: #a7dbc1;
+  }
+  .cal1 .clndr .clndr-table tr .day.event,
+  .cal1 .clndr .clndr-table tr .day.my-event {
+    background: #B4E09F;
+  }
+  .cal1 .clndr .clndr-table tr .day.event:hover,
+  .cal1 .clndr .clndr-table tr .day.my-event:hover {
+    background: #96d478;
+  }
+  .cal1 .clndr .clndr-table tr .day.inactive,
+  .cal1 .clndr .clndr-table tr .day.my-inactive {
+    background: #ddd;
+  }
+  .cal1 .clndr .clndr-table tr .day:last-child {
+    border-right: 1px solid #000;
+  }
+  .cal1 .clndr .clndr-table tr .day .day-contents {
+    box-sizing: border-box;
+    padding: 8px;
+    font-size: 12px;
+    text-align: right;
+  }
+  .cal1 .clndr .clndr-table tr .empty,
+  .cal1 .clndr .clndr-table tr .adjacent-month,
+  .cal1 .clndr .clndr-table tr .my-empty,
+  .cal1 .clndr .clndr-table tr .my-adjacent-month {
+    border-left: 1px solid #000;
+    border-top: 1px solid #000;
+    width: 100%;
+    height: inherit;
+    background: #eee;
+  }
+  .cal1 .clndr .clndr-table tr .empty:hover,
+  .cal1 .clndr .clndr-table tr .adjacent-month:hover,
+  .cal1 .clndr .clndr-table tr .my-empty:hover,
+  .cal1 .clndr .clndr-table tr .my-adjacent-month:hover {
+    background: #ddd;
+  }
+  .cal1 .clndr .clndr-table tr .empty:last-child,
+  .cal1 .clndr .clndr-table tr .adjacent-month:last-child,
+  .cal1 .clndr .clndr-table tr .my-empty:last-child,
+  .cal1 .clndr .clndr-table tr .my-adjacent-month:last-child {
+    border-right: 1px solid #000;
+  }
+  .cal1 .clndr .clndr-table tr:last-child .day,
+  .cal1 .clndr .clndr-table tr:last-child .my-day {
+    border-bottom: 1px solid #000;
+  }
+  .cal1 .clndr .clndr-table tr:last-child .empty,
+  .cal1 .clndr .clndr-table tr:last-child .my-empty {
+    border-bottom: 1px solid #000;
+  }
+
+
+
+
+
+
+/**
+****************************
+****************************
+****************************
+**/
+
+/* Login area */
+.css-button-sharp-red, .css-button-sharp-green, .css-button-sharp-blue {
+    min-width: 100px;
+    height: 30px;
+    color: white;
+    padding: 3px 6px;
+    font-weight: bold;
+    courser: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border: 2px solid red;
+    background: red;
+}
+
+.css-button-sharp-green {
+    border: 2px solid green;
+    background: green;
+}
+
+.css-button-sharp-blue {
+    border: 2px solid blue;
+    background: blue;
+}
+
+.css-button-sharp-red:hover, .css-button-sharp-green:hover, .css-button-sharp-blue:hover {
+    background: white;
+    color: red
+}
+
+.css-button-sharp-green:hover {
+    color: green
+}
+
+.css-button-sharp-blue:hover {
+    color: blue
+}
+
+.login-area {
+    text-align: center;
+}
+
+.login-ok {
+    text-align: right;
+}
+
+.input-group {
+    margin:0px auto;
+    width: 430px;
+    border: 1px solid #000;
+    padding: 3px; 
+    text-align: center;
+}
+
+.login-messaje-ok {
+    border: 4px solid green;
+    background-color: #00ff00;
+}
+
+.login-ok > .input-group {
+    text-align: right;
+}
+
+.input-group > h5 {
+    margin: 4px;
+}
+
+.input-group-inside {
+    margin:0px auto;
+    width: 380px;
+    padding: 3px; 
+    text-align: right;
+}
+
+.input-parent {
+    padding: 3px;
+}
+
+input {
+    font-size: 14px;
+}
+
+
+
+/* Items */
+
+.select-item-td, .select-items {
+  text-align: center !important;
+  vertical-align: middle;
+}
+
+.select-item-td, .select-item-tr {
+  height: 40px !important;
+}
+
+.item-actual {
+  background-color: #00ff00;
+}
+
+.internal-table-item-actual {
+  display: block !important;
+}
+
+
+
+
+
+
+
+
+/* Part 2 */
+
+.select-month-tr, .select-month-td {
+    height: 40px !important;
+}
+
+.month-previous {
+    background-color: #AAA;
+}
+
+.month-no-work {
+    background-color: #333;
+}
+
+.month-actual {
+    background-color: #00ff00;
+}
+
+.select-month-div {
+    text-align: center !important;
+}
+
+
+
+
+/* Part 3 */
+
+/* Head of month calendar showing days */
+.month-header-left {
+  float: left;
+  width: 25%;
+}
+
+.month-header-center {
+  float: left;
+  width: 50%;
+  text-align: center;
+}
+
+.month-header-right {
+  float: left;
+  text-align: right;
+  width: 25%;
+}
+
+.past {
+  background-color: #AAA;
+}
+
+/* Saturday and Sunday */
+.calendar-dow-6, .calendar-dow-0 {
+  background-color: #999 !important;
+}
+
+.bank-holiday {
+  background-color: #FF0000 !important;
+}
+.last-month, .next-month {
+  background-color: #333 !important;
+}
+
+.today {
+  background-color: rgb(78, 215, 233) !important;
+}
+
+.calendar-day-selected {
+  background-color: #00ff00 !important;
+}
+
+.calendar-day-clickable, .calendar-day-clickable-details {
+  cursor: pointer;
+}
+
+
+/* Internal table */
+
+.internal-table {
+    border: 0;
+    width: 100%;
+    margin:0 auto;
+    padding-top: 5px;
+}
+
+.internal-tr, .internal-td {
+    height: 20px !important;
+}
+
+.internal-td {
+    width: 24px;
+}
+
+
+
+/* Part 4 */
+
+.daily-date-selected {
+  font-weight: bold;
+}
+
+.daily-data-internal-text-details, .daily-data-internal-sum-resume {
+  padding-top: 0;
+  margin: 0 10px;
+  border: 0;
+  text-align: left;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 12px;
+  text-indent: 0;
+  background-color: inherit;
+}
+
+.daily-data-internal-sum-resume {
+  font-weight: bold;
+  margin: 10px 10px 0;
+}
+
+
+
+.display-none {
+    display:none;
+}
