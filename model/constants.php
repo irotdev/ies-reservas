@@ -2,7 +2,7 @@
 
 <?php
 
-// Starting in in September and finishing in June
+// Starting in September and finishing in June
 const NUMFIRSTMONTHOFCALENDAR = 9;  
 const NUMLASTMONTHOFCALENDAR = 6;
 
@@ -51,7 +51,7 @@ $numTablets = 30;
 $hours = array (1, 2, 3, 4, 5, 6);
 
 // Types for crud
-$operationCrud = array ("create", "read", "update", "delete");
+$operationCrud = array ("create", "read", "update", "delete", "createUser");
 
 $userTypeAdmin = "administración";
 $userTypeTeacher = "profesorado";

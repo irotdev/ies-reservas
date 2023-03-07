@@ -50,7 +50,11 @@ if (isset($_GET["operation"])) {
                     include('../api/create.php');
                     include('../api/delete.php');
                     include('../api/update.php');
+
+                    if ($userType == $userTypeAdmin) include('../api/create-user.php');
                 }
+
+            } elseif  ($operation == "createUser") {
 
             } else {
                 $jsonArray['status'] = 'error';
