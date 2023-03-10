@@ -1,10 +1,16 @@
 ##############################
+## Passwords or API Keys
+##############################
+private-api.php
+
+##############################
 ## Several
 ##############################
 *.log
 *.zip
 *.tar.gz
 *.rar
+.gitignore
 
 ##### Windows
 # Windows thumbnail cache files
@@ -331,6 +337,10 @@ nbdist/
 # .idea/modules
 # *.iml
 # *.ipr
+
+# Others of idea
+.idea/encodings.xml
+.idea/php.xml
 
 # CMake
 cmake-build-*/
